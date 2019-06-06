@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+  <test name="Test" preserve-order="true">
+    <classes>
+      <class name="springboot.webSpringboot.testCase.login"/><!-- 放类在项目的路径，可往下叠加，按从上往下顺序执行 -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
