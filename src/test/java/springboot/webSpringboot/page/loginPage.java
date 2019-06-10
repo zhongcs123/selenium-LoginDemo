@@ -50,14 +50,44 @@ public class loginPage extends DriverBase{
 	 * 获取【记住账户】按钮Element，点击【记住账户】按钮操作
 	 */
 	public void clickRememberUser() {
-		click("jusername");
+		if (isSelected("jusername")) {
+			click("jusername");
+			if (!isSelected("jusername")) {
+				click("jusername");
+				if (isSelected("jusername")) {
+					
+				}else {
+					System.err.println("点击未选中【记住账户】按钮后，不应该不是选中状态");
+				}
+				
+			}else {
+				System.err.println("点击已选中【记住账户】按钮后，不应该是选中状态");
+			}
+		}else {
+			System.err.println("【记住账户】按钮默认选中状态，不应该不是选中状态");
+		}
+		
 	}
 	
 	/**
 	 * 获取【记住密码】按钮Element，点击【记住密码】按钮操作
 	 */
 	public void clickRememberPass() {
-		click("jpassword");
+		if (isSelected("jpassword")) {
+			click("jpassword");
+			if (!isSelected("jpassword")) {
+				click("jpassword");
+				if (isSelected("jpassword")) {
+					
+				}else {
+					System.err.println("点击未选中【记住密码】按钮后，不应该不是选中状态");
+				}
+			}else {
+				System.err.println("点击已选中【记住密码】按钮后，不应该是选中状态");
+			}
+		}else {
+			System.err.println("【记住密码】按钮默认选中状态，不应该不是选中状态");
+		}
 	}
 	
 	/**
