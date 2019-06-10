@@ -92,7 +92,6 @@ public class login {
 		login.setPassword("TruePassword");// 输入密码
 		login.clickLogin();// 点击登录
 		login.assertUser();//断言是否正常登录
-		
 	}
 
 	@BeforeClass

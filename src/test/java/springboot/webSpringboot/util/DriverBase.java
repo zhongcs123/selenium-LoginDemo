@@ -3,6 +3,7 @@ package springboot.webSpringboot.util;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -42,11 +43,35 @@ public class DriverBase extends selectDriver{
 	}
 	
 	/**
-	 * 显示等待，等待10秒，元素出现则操作，元素在10秒内没出现则报异常；
+	 * 显示等待，等待10秒，元素出现则操作，元素在10秒内没出现则报异常；对单个元素指定一个等待条件操作等待（推荐使用）
+	 * @param elementKey
 	 */
 	public void WebDriverWait(String elementKey) {
-		new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(setEle(elementKey)));
+		WebDriverWait wait=new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.presenceOfElementLocated(setEle(elementKey)));//等待元素10秒是否出现，超时则抛出异常
 	}
+	
+	/**
+	 * 隐式等待，等待10秒，有元素则执行，超时报异常；
+	 * 隐式等待，相当于设置全局的等待，在定位元素时，对所有元素设置超时时间。隐式等待是等页面加载，而不是元素加载！！！（隐式等待就是针对页面的，显式等待是针对元素的。）
+	 */
+	public void implicitlyWait() {
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	}
+	
+	/**
+	 * 封装强制等待时间,单位ms
+	 * @param time 强制等待时间，单位毫秒ms       
+	 */
+	public void sleep(int time) {
+		try {
+			Thread.sleep(time);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
 	
 	/**
 	 * 封装findElement(By by)
@@ -68,12 +93,8 @@ public class DriverBase extends selectDriver{
 	 * @param elementKey 参数为输入element.properties配置文件key值
 	 */
 	public void click(String elementKey) {
-		if (findElement(elementKey).isEnabled()) {
-			findElement(elementKey).click();
-		}else {
-			System.err.println("按钮无效："+elementKey);
-		}
-		
+		Assert.assertEquals(true, findElement(elementKey).isEnabled());
+		findElement(elementKey).click();
 	}
 	
 	/**
@@ -82,12 +103,8 @@ public class DriverBase extends selectDriver{
 	 * @param inputKey 请输入inputs.properties配置文件key值
 	 */
 	public void sendKey(String elementKey,String inputKey) {
-		if (findElement(elementKey).isEnabled()) {
-				findElement(elementKey).sendKeys(setInput(inputKey));
-		}else {
-			System.err.println("按钮无效："+elementKey);
-		}
-		
+		Assert.assertEquals(true, findElement(elementKey).isEnabled());
+		findElement(elementKey).sendKeys(setInput(inputKey));	
 	}
 	
 	/**
@@ -95,11 +112,8 @@ public class DriverBase extends selectDriver{
 	 * @param elementKey 参数为输入element.properties配置文件key值
 	 */
 	public void clear(String elementKey) {
-		if (findElement(elementKey).isEnabled()) {
-			findElement(elementKey).clear();
-		}else {
-			System.err.println("按钮无效："+elementKey);
-		}
+		Assert.assertEquals(true, findElement(elementKey).isEnabled());
+		findElement(elementKey).clear();
 	}
 	
 	/**
@@ -118,17 +132,6 @@ public class DriverBase extends selectDriver{
         return driver.getTitle();
     }
 	
-    /**
-	 * 封装强制等待时间,单位ms
-	 * @param time 强制等待时间，单位毫秒ms       
-	 */
-	public void sleep(int time) {
-		try {
-			Thread.sleep(time);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-	}
 	
 	/**
 	 * 封装判断元素是否被选中isSelected
@@ -143,14 +146,6 @@ public class DriverBase extends selectDriver{
 	 */
 	public boolean isDisplayed(String elementKey) {
 		return findElement(elementKey).isDisplayed();
-	}
-	
-	/**
-	 * 判断元素是否显示
-	 * @param 输入参数值
-	 */
-	public void isDisplayed(String elementKey,String string) {
-		Assert.assertEquals(true, isDisplayed(elementKey),string);
 	}
 
 	

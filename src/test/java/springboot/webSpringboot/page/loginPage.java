@@ -122,21 +122,8 @@ public class loginPage extends DriverBase{
 	 * 断言，获取正常登陆后账户展示
 	 */
 	public void assertUser() {
-		isDisplayed("assertUser", "登录失败");
+		Assert.assertEquals("ydcyxlys211",getText("assertUser"),"登陆失败" );
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	
