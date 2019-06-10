@@ -2,48 +2,48 @@
 <testng-results skipped="0" failed="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="49244" started-at="2019-06-06T08:00:21Z" finished-at="2019-06-06T08:01:10Z">
+  <suite name="Default suite" duration-ms="38213" started-at="2019-06-10T02:55:55Z" finished-at="2019-06-10T02:56:33Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="49244" started-at="2019-06-06T08:00:21Z" finished-at="2019-06-06T08:01:10Z">
+    <test name="Default test" duration-ms="38213" started-at="2019-06-10T02:55:55Z" finished-at="2019-06-10T02:56:33Z">
       <class name="springboot.webSpringboot.testCase.login">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:springboot.webSpringboot.testCase.login@7a92922]" name="beforeClass" is-config="true" duration-ms="9084" started-at="2019-06-06T16:00:21Z" finished-at="2019-06-06T16:00:30Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:springboot.webSpringboot.testCase.login@326de728]" name="beforeClass" is-config="true" duration-ms="8638" started-at="2019-06-10T10:55:55Z" finished-at="2019-06-10T10:56:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="FalseULogin()[pri:0, instance:springboot.webSpringboot.testCase.login@7a92922]" name="FalseULogin" duration-ms="4342" started-at="2019-06-06T16:00:30Z" finished-at="2019-06-06T16:00:35Z">
+        <test-method status="PASS" signature="FalseULogin()[pri:0, instance:springboot.webSpringboot.testCase.login@326de728]" name="FalseULogin" duration-ms="2853" started-at="2019-06-10T10:56:04Z" finished-at="2019-06-10T10:56:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FalseULogin -->
-        <test-method status="PASS" signature="FalsePLogin()[pri:0, instance:springboot.webSpringboot.testCase.login@7a92922]" name="FalsePLogin" duration-ms="5276" started-at="2019-06-06T16:00:35Z" finished-at="2019-06-06T16:00:40Z">
+        <test-method status="PASS" signature="FalsePLogin()[pri:0, instance:springboot.webSpringboot.testCase.login@326de728]" name="FalsePLogin" duration-ms="2819" started-at="2019-06-10T10:56:06Z" finished-at="2019-06-10T10:56:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FalsePLogin -->
-        <test-method status="PASS" signature="FalseUNullLogin()[pri:0, instance:springboot.webSpringboot.testCase.login@7a92922]" name="FalseUNullLogin" duration-ms="4179" started-at="2019-06-06T16:00:40Z" finished-at="2019-06-06T16:00:44Z">
+        <test-method status="PASS" signature="FalseUNullLogin()[pri:0, instance:springboot.webSpringboot.testCase.login@326de728]" name="FalseUNullLogin" duration-ms="2769" started-at="2019-06-10T10:56:09Z" finished-at="2019-06-10T10:56:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FalseUNullLogin -->
-        <test-method status="PASS" signature="FalsePNullLogin()[pri:0, instance:springboot.webSpringboot.testCase.login@7a92922]" name="FalsePNullLogin" duration-ms="4198" started-at="2019-06-06T16:00:44Z" finished-at="2019-06-06T16:00:48Z">
+        <test-method status="PASS" signature="FalsePNullLogin()[pri:0, instance:springboot.webSpringboot.testCase.login@326de728]" name="FalsePNullLogin" duration-ms="2721" started-at="2019-06-10T10:56:12Z" finished-at="2019-06-10T10:56:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FalsePNullLogin -->
-        <test-method status="PASS" signature="JUPclick()[pri:0, instance:springboot.webSpringboot.testCase.login@7a92922]" name="JUPclick" duration-ms="3152" started-at="2019-06-06T16:00:48Z" finished-at="2019-06-06T16:00:51Z">
+        <test-method status="PASS" signature="JUPclick()[pri:0, instance:springboot.webSpringboot.testCase.login@326de728]" name="JUPclick" duration-ms="3171" started-at="2019-06-10T10:56:15Z" finished-at="2019-06-10T10:56:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- JUPclick -->
-        <test-method status="PASS" signature="LoginFindPasswordPage()[pri:0, instance:springboot.webSpringboot.testCase.login@7a92922]" name="LoginFindPasswordPage" duration-ms="4173" started-at="2019-06-06T16:00:51Z" finished-at="2019-06-06T16:00:56Z">
+        <test-method status="PASS" signature="LoginFindPasswordPage()[pri:0, instance:springboot.webSpringboot.testCase.login@326de728]" name="LoginFindPasswordPage" duration-ms="3181" started-at="2019-06-10T10:56:18Z" finished-at="2019-06-10T10:56:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginFindPasswordPage -->
-        <test-method status="PASS" signature="logingTrue()[pri:0, instance:springboot.webSpringboot.testCase.login@7a92922]" name="logingTrue" duration-ms="12631" started-at="2019-06-06T16:00:56Z" finished-at="2019-06-06T16:01:08Z">
+        <test-method status="PASS" signature="logingTrue()[pri:0, instance:springboot.webSpringboot.testCase.login@326de728]" name="logingTrue" duration-ms="9739" started-at="2019-06-10T10:56:21Z" finished-at="2019-06-10T10:56:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logingTrue -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:springboot.webSpringboot.testCase.login@7a92922]" name="afterClass" is-config="true" duration-ms="2195" started-at="2019-06-06T16:01:08Z" finished-at="2019-06-06T16:01:10Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:springboot.webSpringboot.testCase.login@326de728]" name="afterClass" is-config="true" duration-ms="2309" started-at="2019-06-10T10:56:31Z" finished-at="2019-06-10T10:56:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- springboot.webSpringboot.testCase.login -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

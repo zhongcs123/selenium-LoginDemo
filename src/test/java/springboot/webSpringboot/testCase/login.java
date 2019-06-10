@@ -18,10 +18,9 @@ public class login {
 	public void FalseULogin() {
 		login.setUsername("FalseUsername");// 输入错误用户名
 		login.setPassword("TruePassword");// 输入密码
-		login.sleep(2000);
 		login.clickLogin();// 点击登录
-		login.sleep(2000);
 		login.userNothingness();//断言
+		login.sleep(2000);//强制等待2秒
 	}
 
 	@Test(priority = 2) // 正确账户，错误密码登录
@@ -30,10 +29,9 @@ public class login {
 		login.clearPassword();//清空密码输入框
 		login.setUsername("TrueUsername");// 输入用户名
 		login.setPassword("FalsePassword");// 输入错误密码
-		login.sleep(3000);
 		login.clickLogin();// 点击登录
-		login.sleep(2000);
 		login.passwordNothingness();//断言
+		login.sleep(2000);//强制等待2秒
 	}
 
 	@Test(priority = 3) // 账户为空，输入密码，点击登录
@@ -41,10 +39,9 @@ public class login {
 		login.clearUsername();//清空用户名输入框
 		login.clearPassword();//清空密码输入框
 		login.setPassword("TruePassword");// 输入密码
-		login.sleep(3000);
 		login.clickLogin();// 点击登录
-		login.sleep(1000);
 		login.UPNoll();//断言
+		login.sleep(2000);//强制等待2秒
 	}
 
 	@Test(priority = 4) // 输入账户，密码为空，点击登录
@@ -52,24 +49,22 @@ public class login {
 		login.clearUsername();//清空用户名输入框
 		login.clearPassword();//清空密码输入框
 		login.setUsername("TrueUsername");// 输入用户名
-		login.sleep(3000);
 		login.clickLogin();// 点击登录
-		login.sleep(1000);
 		login.UPNoll();//断言
+		login.sleep(2000);//强制等待2秒
 	}
 
 	@Test(priority = 5) // 记住账户、记住密码按钮可正常点击
 	public void JUPclick() {
 		login.clickRememberUser();//点击记住账户
 		login.clickRememberPass();//点击记住密码
-		login.sleep(3000);
+		login.sleep(2000);//强制等待2秒
 	}
 
 	@Test(priority = 6) // 点击忘记密码，跳转找回密码页面,判断正常跳转关闭该页面，切换登录页面；
 	public void LoginFindPasswordPage() {
 		String handle=login.getWindowHandle();//获取当前句柄
 		login.clickForgetPass();//点击忘记密码
-		login.sleep(2000);
 		List<String> handles=login.getWindowsHandles();//遍历所有句柄
 		for (String h : handles) {
 			if (h.equals(handle)) {
@@ -82,7 +77,7 @@ public class login {
 		Assert.assertEquals("找回密码", login.getTitle(), "产品登录页面：点击【忘记密码】没正常跳转找回密码页面");
 		login.driver.close();
 		login.switchWindows(handle);//切换句柄：登录页面
-		login.sleep(1000);
+		login.sleep(2000);//强制等待2秒
 		
 	}
 
@@ -92,9 +87,7 @@ public class login {
 		login.clearPassword();//清空密码输入框
 		login.setUsername("TrueUsername");// 输入用户名
 		login.setPassword("TruePassword");// 输入密码
-		login.sleep(3000);
 		login.clickLogin();// 点击登录
-		login.sleep(6000);
 		login.assertUser();//断言是否正常登录
 		
 	}

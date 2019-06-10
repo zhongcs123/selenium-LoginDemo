@@ -14,7 +14,6 @@ public class loginPage extends DriverBase{
 	 * 获取用户名输入框Element,输入用户名操作
 	 */
 	public void setUsername(String inputKey) {
-		isDisplayed("username", "登录页面，用户名输入框元素不存在");
 		sendKey("username", inputKey);
 	}
 	
@@ -22,7 +21,6 @@ public class loginPage extends DriverBase{
 	 * 获取密码输入框Element,输入密码操作
 	 */
 	public void setPassword(String inputKey) {
-		isDisplayed("password", "登录页面，密码输入框元素不存在");
 		sendKey("password", inputKey);
 	}
 	
@@ -30,7 +28,6 @@ public class loginPage extends DriverBase{
 	 * 获取用户名输入框Element,清空用户名输入框操作
 	 */
 	public void clearUsername() {
-		isDisplayed("username", "登录页面，用户名输入框元素不存在");
 		clear("username");
 	}
 	
@@ -38,7 +35,6 @@ public class loginPage extends DriverBase{
 	 * 获取密码输入框Element,清空密码输入框操作
 	 */
 	public void clearPassword() {
-		isDisplayed("password", "登录页面，密码输入框元素不存在");
 		clear("password");
 	}
 
@@ -47,7 +43,6 @@ public class loginPage extends DriverBase{
 	 * 获取【登录】按钮Element，点击【登录】按钮操作
 	 */
 	public void clickLogin() {
-		isDisplayed("buttonLog", "登录页面，【登录】按钮元素不存在");
 		click("buttonLog");
 	}
 	
@@ -55,7 +50,6 @@ public class loginPage extends DriverBase{
 	 * 获取【记住账户】按钮Element，点击【记住账户】按钮操作
 	 */
 	public void clickRememberUser() {
-		isDisplayed("jusername", "登录页面，【记住账户】按钮元素不存在");
 		click("jusername");
 	}
 	
@@ -63,7 +57,6 @@ public class loginPage extends DriverBase{
 	 * 获取【记住密码】按钮Element，点击【记住密码】按钮操作
 	 */
 	public void clickRememberPass() {
-		isDisplayed("jpassword", "登录页面，【记住密码】按钮元素不存在");
 		click("jpassword");
 	}
 	
@@ -71,7 +64,6 @@ public class loginPage extends DriverBase{
 	 * 获取【忘记密码】按钮Element，点击【忘记密码】按钮操作
 	 */
 	public void clickForgetPass() {
-		isDisplayed("forget", "登录页面，【忘记密码】按钮元素不存在");
 		click("forget");
 	}
 	

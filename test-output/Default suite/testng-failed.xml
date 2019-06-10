@@ -5,8 +5,10 @@
     <classes>
       <class name="springboot.webSpringboot.testCase.login">
         <methods>
-          <include name="f"/>
+          <include name="FalseUNullLogin"/>
+          <include name="FalsePLogin"/>
           <include name="beforeClass"/>
+          <include name="afterClass"/>
         </methods>
       </class> <!-- springboot.webSpringboot.testCase.login -->
     </classes>

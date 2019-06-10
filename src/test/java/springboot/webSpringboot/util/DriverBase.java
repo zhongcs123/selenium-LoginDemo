@@ -11,6 +11,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 public class DriverBase extends selectDriver{
@@ -40,9 +42,17 @@ public class DriverBase extends selectDriver{
 	}
 	
 	/**
+	 * 显示等待，等待10秒，元素出现则操作，元素在10秒内没出现则报异常；
+	 */
+	public void WebDriverWait(String elementKey) {
+		new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(setEle(elementKey)));
+	}
+	
+	/**
 	 * 封装findElement(By by)
 	 */
 	public WebElement findElement(String elementKey) {
+		WebDriverWait(elementKey);
 		return driver.findElement(setEle(elementKey));
 	}
 	
@@ -54,37 +64,51 @@ public class DriverBase extends selectDriver{
 	}
 	
 	/**
-	 * 点击
+	 * 判断页面元素是否有效，再【点击】操作
 	 * @param elementKey 参数为输入element.properties配置文件key值
 	 */
 	public void click(String elementKey) {
-		findElement(elementKey).click();
+		if (findElement(elementKey).isEnabled()) {
+			findElement(elementKey).click();
+		}else {
+			System.err.println("按钮无效："+elementKey);
+		}
+		
 	}
 	
 	/**
-	 * 输入
+	 * 判断页面元素是否有效，再【输入】操作
 	 * @param elementKey 请输入element.properties配置文件key值
 	 * @param inputKey 请输入inputs.properties配置文件key值
 	 */
 	public void sendKey(String elementKey,String inputKey) {
-		findElement(elementKey).sendKeys(setInput(inputKey));
+		if (findElement(elementKey).isEnabled()) {
+				findElement(elementKey).sendKeys(setInput(inputKey));
+		}else {
+			System.err.println("按钮无效："+elementKey);
+		}
+		
 	}
 	
 	/**
-	 * 清除输入框内容
+	 * 判断页面元素是否有效，再【清除输入框】内容操作
 	 * @param elementKey 参数为输入element.properties配置文件key值
 	 */
 	public void clear(String elementKey) {
-		findElement(elementKey).clear();
+		if (findElement(elementKey).isEnabled()) {
+			findElement(elementKey).clear();
+		}else {
+			System.err.println("按钮无效："+elementKey);
+		}
 	}
 	
 	/**
-	 * 获取元素文本信息
+	 * 【获取元素文本信息】操作
 	 * @param elementKey
 	 * @return String类型
 	 */
 	public String getText(String elementKey) {
-		return findElement(elementKey).getText();
+			return findElement(elementKey).getText();
 	}
 	
 	/**
@@ -114,7 +138,7 @@ public class DriverBase extends selectDriver{
 	}
 	
 	/**
-	 * 判断元素是否显示
+	 * 判断元素是否显示在页面上
 	 * @param 输入参数值
 	 */
 	public boolean isDisplayed(String elementKey) {
@@ -131,7 +155,7 @@ public class DriverBase extends selectDriver{
 
 	
 	/**
-	 * 判断元素是否显示
+	 * 判断元素按钮是否有效
 	 */
 	public boolean isEnabled(String elementKey) {
 		return findElement(elementKey).isEnabled();
