@@ -3,6 +3,7 @@ package springboot.webSpringboot.util;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.session.FirefoxFilter;
 
 public class selectDriver {
 	/**
@@ -17,7 +18,10 @@ public class selectDriver {
 		if (browser.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", ".\\browserDriver\\chromedriver.exe");
 			return new ChromeDriver();
-		}else {
+		}if (browser.equalsIgnoreCase("fireFox")){
+            System.setProperty("webdriver.firefox.marionette", "\\browserDriver\\geckodriver.exe");
+            return (WebDriver) new FirefoxFilter();
+        }else {
 			System.setProperty("webdriver.ie.driver", ".\\browserDriver\\IEDriverServer.exe");
 			return new InternetExplorerDriver();
 		}
