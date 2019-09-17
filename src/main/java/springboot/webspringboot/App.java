@@ -1,4 +1,4 @@
-package springboot.webSpringboot;
+package springboot.webspringboot;
 
 /**
  * Hello world!

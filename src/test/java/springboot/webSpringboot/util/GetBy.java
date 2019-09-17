@@ -6,7 +6,7 @@ import java.util.ResourceBundle;
 
 import org.openqa.selenium.By;
 
-public class getBy {
+public class GetBy {
 	/**
 	 * 获取配置文件，解决中文乱码
 	 * @param element 配置文件名

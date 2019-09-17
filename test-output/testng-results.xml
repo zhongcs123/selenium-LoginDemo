@@ -2,48 +2,48 @@
 <testng-results skipped="0" failed="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="39734" started-at="2019-06-10T09:05:00Z" finished-at="2019-06-10T09:05:39Z">
+  <suite name="Default suite" duration-ms="44974" started-at="2019-09-17T03:19:24Z" finished-at="2019-09-17T03:20:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="39734" started-at="2019-06-10T09:05:00Z" finished-at="2019-06-10T09:05:39Z">
-      <class name="springboot.webSpringboot.testCase.login">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:springboot.webSpringboot.testCase.login@326de728]" name="beforeClass" is-config="true" duration-ms="8926" started-at="2019-06-10T17:05:00Z" finished-at="2019-06-10T17:05:08Z">
+    <test name="Default test" duration-ms="44974" started-at="2019-09-17T03:19:24Z" finished-at="2019-09-17T03:20:09Z">
+      <class name="springboot.webSpringboot.testcase.Login">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:springboot.webSpringboot.testcase.Login@326de728]" name="beforeClass" is-config="true" duration-ms="9136" started-at="2019-09-17T11:19:24Z" finished-at="2019-09-17T11:19:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="FalseULogin()[pri:0, instance:springboot.webSpringboot.testCase.login@326de728]" name="FalseULogin" duration-ms="2943" started-at="2019-06-10T17:05:08Z" finished-at="2019-06-10T17:05:11Z">
+        <test-method status="PASS" signature="FalseULogin()[pri:0, instance:springboot.webSpringboot.testcase.Login@326de728]" name="FalseULogin" duration-ms="7481" started-at="2019-09-17T11:19:33Z" finished-at="2019-09-17T11:19:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FalseULogin -->
-        <test-method status="PASS" signature="FalsePLogin()[pri:0, instance:springboot.webSpringboot.testCase.login@326de728]" name="FalsePLogin" duration-ms="2808" started-at="2019-06-10T17:05:11Z" finished-at="2019-06-10T17:05:14Z">
+        <test-method status="PASS" signature="FalsePLogin()[pri:0, instance:springboot.webSpringboot.testcase.Login@326de728]" name="FalsePLogin" duration-ms="2893" started-at="2019-09-17T11:19:40Z" finished-at="2019-09-17T11:19:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FalsePLogin -->
-        <test-method status="PASS" signature="FalseUNullLogin()[pri:0, instance:springboot.webSpringboot.testCase.login@326de728]" name="FalseUNullLogin" duration-ms="2733" started-at="2019-06-10T17:05:14Z" finished-at="2019-06-10T17:05:17Z">
+        <test-method status="PASS" signature="FalseUNullLogin()[pri:0, instance:springboot.webSpringboot.testcase.Login@326de728]" name="FalseUNullLogin" duration-ms="2744" started-at="2019-09-17T11:19:43Z" finished-at="2019-09-17T11:19:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FalseUNullLogin -->
-        <test-method status="PASS" signature="FalsePNullLogin()[pri:0, instance:springboot.webSpringboot.testCase.login@326de728]" name="FalsePNullLogin" duration-ms="2742" started-at="2019-06-10T17:05:17Z" finished-at="2019-06-10T17:05:20Z">
+        <test-method status="PASS" signature="FalsePNullLogin()[pri:0, instance:springboot.webSpringboot.testcase.Login@326de728]" name="FalsePNullLogin" duration-ms="2758" started-at="2019-09-17T11:19:46Z" finished-at="2019-09-17T11:19:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FalsePNullLogin -->
-        <test-method status="PASS" signature="JUPclick()[pri:0, instance:springboot.webSpringboot.testCase.login@326de728]" name="JUPclick" duration-ms="2347" started-at="2019-06-10T17:05:20Z" finished-at="2019-06-10T17:05:22Z">
+        <test-method status="PASS" signature="JUPclick()[pri:0, instance:springboot.webSpringboot.testcase.Login@326de728]" name="JUPclick" duration-ms="2499" started-at="2019-09-17T11:19:49Z" finished-at="2019-09-17T11:19:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- JUPclick -->
-        <test-method status="PASS" signature="LoginFindPasswordPage()[pri:0, instance:springboot.webSpringboot.testCase.login@326de728]" name="LoginFindPasswordPage" duration-ms="5243" started-at="2019-06-10T17:05:22Z" finished-at="2019-06-10T17:05:27Z">
+        <test-method status="PASS" signature="LoginFindPasswordPage()[pri:0, instance:springboot.webSpringboot.testcase.Login@326de728]" name="LoginFindPasswordPage" duration-ms="5225" started-at="2019-09-17T11:19:51Z" finished-at="2019-09-17T11:19:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginFindPasswordPage -->
-        <test-method status="PASS" signature="logingTrue()[pri:0, instance:springboot.webSpringboot.testCase.login@326de728]" name="logingTrue" duration-ms="9674" started-at="2019-06-10T17:05:27Z" finished-at="2019-06-10T17:05:37Z">
+        <test-method status="PASS" signature="logingTrue()[pri:0, instance:springboot.webSpringboot.testcase.Login@326de728]" name="logingTrue" duration-ms="9882" started-at="2019-09-17T11:19:57Z" finished-at="2019-09-17T11:20:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logingTrue -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:springboot.webSpringboot.testCase.login@326de728]" name="afterClass" is-config="true" duration-ms="2307" started-at="2019-06-10T17:05:37Z" finished-at="2019-06-10T17:05:39Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:springboot.webSpringboot.testcase.Login@326de728]" name="afterClass" is-config="true" duration-ms="2341" started-at="2019-09-17T11:20:06Z" finished-at="2019-09-17T11:20:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- springboot.webSpringboot.testCase.login -->
+      </class> <!-- springboot.webSpringboot.testcase.Login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -16,12 +16,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-public class DriverBase extends selectDriver{
+public class DriverBase extends SelectDriver{
 	public WebDriver driver;
-	public selectDriver selectDriver;
+	public SelectDriver SelectDriver;
 	public DriverBase(String browser) {
-		selectDriver=new selectDriver();
-		this.driver=selectDriver.driverName(browser);
+		SelectDriver=new SelectDriver();
+		this.driver=SelectDriver.driverName(browser);
 	}
 	
 	/**
@@ -30,7 +30,7 @@ public class DriverBase extends selectDriver{
 	 * @return By类型
 	 */
 	public By setEle(String elementKey) {
-		return new getBy().setBy(elementKey);
+		return new GetBy().setBy(elementKey);
 	}
 	
 	/**
@@ -39,7 +39,7 @@ public class DriverBase extends selectDriver{
 	 * @return String类型
 	 */
 	public String setInput(String inputKey) {
-		return new getBy().setInput(inputKey);
+		return new GetBy().setInput(inputKey);
 	}
 	
 	/**

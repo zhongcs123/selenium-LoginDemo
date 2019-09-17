@@ -4,9 +4,9 @@ import org.testng.Assert;
 
 import springboot.webSpringboot.util.DriverBase;
 
-public class loginPage extends DriverBase{
+public class LoginPage extends DriverBase{
 
-	public loginPage(String browser) {
+	public LoginPage(String browser) {
 		super(browser);
 	}
 	

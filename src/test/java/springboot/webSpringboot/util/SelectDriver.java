@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.session.FirefoxFilter;
 
-public class selectDriver {
+public class SelectDriver {
 	/**
 	 * 选择浏览器类型的类
 	 * 封装driver

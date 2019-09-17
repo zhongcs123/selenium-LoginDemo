@@ -1,8 +1,8 @@
-package springboot.webSpringboot.testCase;
+package springboot.webSpringboot.testcase;
 
 import org.testng.annotations.Test;
 
-import springboot.webSpringboot.page.loginPage;
+import springboot.webSpringboot.page.LoginPage;
 
 import org.testng.annotations.BeforeClass;
 
@@ -11,8 +11,8 @@ import java.util.List;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
-public class login {
-	public loginPage login;
+public class Login {
+	public LoginPage login;
 
 	@Test(priority = 1) // 错误账户登录
 	public void FalseULogin() {
@@ -59,6 +59,8 @@ public class login {
 		login.clickRememberUser();//点击记住账户
 		login.clickRememberPass();//点击记住密码
 		login.sleep(2000);//强制等待2秒
+		login.clearUsername();//清空用户名输入框
+		login.clearPassword();//清空密码输入框
 	}
 
 	@Test(priority = 6) // 点击忘记密码，跳转找回密码页面,判断正常跳转关闭该页面，切换登录页面；
@@ -86,8 +88,6 @@ public class login {
 
 	@Test(priority = 7) // 正常登录；
 	public void logingTrue() {
-		login.clearUsername();//清空用户名输入框
-		login.clearPassword();//清空密码输入框
 		login.setUsername("TrueUsername");// 输入用户名
 		login.setPassword("TruePassword");// 输入密码
 		login.clickLogin();// 点击登录
@@ -96,7 +96,7 @@ public class login {
 
 	@BeforeClass
 	public void beforeClass() {
-		login = new loginPage("chrome");// 选择浏览器
+		login = new LoginPage("chrome");// 选择浏览器
 		login.get("loginUrl");// 打开网址
 		login.maxwindow();// 放大窗口
 		login.sleep(3000);// 等待3秒
