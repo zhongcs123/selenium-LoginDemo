@@ -1,6 +1,6 @@
-springboot\webSpringboot\testCase\login.class
-springboot\webSpringboot\util\getBy.class
-springboot\webSpringboot\App.class
-springboot\webSpringboot\page\loginPage.class
-springboot\webSpringboot\util\DriverBase.class
-springboot\webSpringboot\util\selectDriver.class
+automate\webautomate\util\GetBy.class
+springboot\webspringboot\App.class
+automate\webautomate\page\LoginPage.class
+automate\webautomate\util\DriverBase.class
+automate\webautomate\util\SelectDriver.class
+automate\webautomate\testcase\Login.class

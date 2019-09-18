@@ -2,12 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>springboot</groupId>
-  <artifactId>webSpringboot</artifactId>
+  <groupId>automate</groupId>
+  <artifactId>webautomate</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>webSpringboot</name>
+  <name>webautomation</name>
   <url>http://maven.apache.org</url>
 
   <properties>

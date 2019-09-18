@@ -1,5 +1,9 @@
 package automate.webautomate.testcase;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 
 import automate.webautomate.page.LoginPage;
@@ -78,7 +82,7 @@ public class Login {
 		}
 		login.sleep(2000);
 		try {
-			Assert.assertEquals("找回密码", login.getTitle(), "产品登录页面：点击【忘记密码】跳转找回密码页面,断言title");
+			AssertJUnit.assertEquals("找回密码", login.getTitle(), "产品登录页面：点击【忘记密码】跳转找回密码页面,断言title");
 		} finally {
 			login.driver.close();
 			login.switchWindows(handle);//切换句柄：登录页面
