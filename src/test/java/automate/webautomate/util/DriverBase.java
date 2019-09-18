@@ -1,4 +1,4 @@
-package springboot.webSpringboot.util;
+package automate.webautomate.util;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package springboot.webSpringboot.util;
+package automate.webautomate.util;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Locale;

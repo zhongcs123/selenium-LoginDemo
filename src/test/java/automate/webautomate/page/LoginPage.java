@@ -1,8 +1,8 @@
-package springboot.webSpringboot.page;
+package automate.webautomate.page;
 
 import org.testng.Assert;
 
-import springboot.webSpringboot.util.DriverBase;
+import automate.webautomate.util.DriverBase;
 
 public class LoginPage extends DriverBase{
 

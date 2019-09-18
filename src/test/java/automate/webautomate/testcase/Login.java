@@ -1,8 +1,8 @@
-package springboot.webSpringboot.testcase;
+package automate.webautomate.testcase;
 
 import org.testng.annotations.Test;
 
-import springboot.webSpringboot.page.LoginPage;
+import automate.webautomate.page.LoginPage;
 
 import org.testng.annotations.BeforeClass;
 
