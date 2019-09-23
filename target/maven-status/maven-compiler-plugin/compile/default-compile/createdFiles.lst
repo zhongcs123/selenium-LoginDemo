@@ -1,6 +1,8 @@
 automate\webautomate\util\GetBy.class
 springboot\webspringboot\App.class
+automate\webautomate\page\LoginMKWPage.class
 automate\webautomate\page\LoginPage.class
 automate\webautomate\util\DriverBase.class
 automate\webautomate\util\SelectDriver.class
 automate\webautomate\testcase\Login.class
+automate\webautomate\testcase\LoginMKW.class

@@ -3,7 +3,7 @@
 <suite name="Suite" >
   <test name="Test" preserve-order="true">
     <classes>
-      <class name="automate.webautomate.testcase.Login"/>
+      <class name="automate.webautomate.testcase.LoginMKW"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

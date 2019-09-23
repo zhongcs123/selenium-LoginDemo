@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="automate.webautomate.testcase.Login">
+      <class name="automate.webautomate.testcase.LoginMKW">
         <methods>
-          <include name="afterClass"/>
-          <include name="logingTrue"/>
           <include name="beforeClass"/>
+          <include name="trueLogin"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- automate.webautomate.testcase.Login -->
+      </class> <!-- automate.webautomate.testcase.LoginMKW -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

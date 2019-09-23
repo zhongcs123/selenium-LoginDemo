@@ -1,89 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="7" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="42253" started-at="2019-09-18T03:43:13Z" finished-at="2019-09-18T03:43:55Z">
+  <suite name="Suite" duration-ms="29324" started-at="2019-09-23T06:36:00Z" finished-at="2019-09-23T06:36:29Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="42253" started-at="2019-09-18T03:43:13Z" finished-at="2019-09-18T03:43:55Z">
-      <class name="automate.webautomate.testcase.Login">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:automate.webautomate.testcase.Login@73f792cf]" name="beforeClass" is-config="true" duration-ms="11655" started-at="2019-09-18T03:43:13Z" finished-at="2019-09-18T03:43:25Z">
+    <test name="Test" duration-ms="29324" started-at="2019-09-23T06:36:00Z" finished-at="2019-09-23T06:36:29Z">
+      <class name="automate.webautomate.testcase.LoginMKW">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:automate.webautomate.testcase.LoginMKW@73f792cf]" name="beforeClass" is-config="true" duration-ms="15007" started-at="2019-09-23T06:36:00Z" finished-at="2019-09-23T06:36:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="FalseULogin()[pri:1, instance:automate.webautomate.testcase.Login@73f792cf]" name="FalseULogin" duration-ms="3057" started-at="2019-09-18T03:43:25Z" finished-at="2019-09-18T03:43:28Z">
+        <test-method status="PASS" signature="trueLogin()[pri:0, instance:automate.webautomate.testcase.LoginMKW@73f792cf]" name="trueLogin" duration-ms="11565" started-at="2019-09-23T06:36:16Z" finished-at="2019-09-23T06:36:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- FalseULogin -->
-        <test-method status="PASS" signature="FalsePLogin()[pri:2, instance:automate.webautomate.testcase.Login@73f792cf]" name="FalsePLogin" duration-ms="2836" started-at="2019-09-18T03:43:28Z" finished-at="2019-09-18T03:43:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FalsePLogin -->
-        <test-method status="PASS" signature="FalseUNullLogin()[pri:3, instance:automate.webautomate.testcase.Login@73f792cf]" name="FalseUNullLogin" duration-ms="2737" started-at="2019-09-18T03:43:31Z" finished-at="2019-09-18T03:43:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FalseUNullLogin -->
-        <test-method status="PASS" signature="FalsePNullLogin()[pri:4, instance:automate.webautomate.testcase.Login@73f792cf]" name="FalsePNullLogin" duration-ms="2734" started-at="2019-09-18T03:43:34Z" finished-at="2019-09-18T03:43:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FalsePNullLogin -->
-        <test-method status="PASS" signature="JUPclick()[pri:5, instance:automate.webautomate.testcase.Login@73f792cf]" name="JUPclick" duration-ms="2479" started-at="2019-09-18T03:43:36Z" finished-at="2019-09-18T03:43:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- JUPclick -->
-        <test-method status="FAIL" signature="LoginFindPasswordPage()[pri:6, instance:automate.webautomate.testcase.Login@73f792cf]" name="LoginFindPasswordPage" duration-ms="5256" started-at="2019-09-18T03:43:39Z" finished-at="2019-09-18T03:43:44Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[找回密码 expected:<找回密码> but was:<产品登录页面：点击【忘记密码】跳转找回密码页面,断言title>]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 找回密码 expected:<找回密码> but was:<产品登录页面：点击【忘记密码】跳转找回密码页面,断言title>
-at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:101)
-at automate.webautomate.testcase.Login.LoginFindPasswordPage(Login.java:85)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginFindPasswordPage -->
-        <test-method status="PASS" signature="logingTrue()[pri:7, instance:automate.webautomate.testcase.Login@73f792cf]" name="logingTrue" duration-ms="9223" started-at="2019-09-18T03:43:44Z" finished-at="2019-09-18T03:43:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logingTrue -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:automate.webautomate.testcase.Login@73f792cf]" name="afterClass" is-config="true" duration-ms="2073" started-at="2019-09-18T03:43:53Z" finished-at="2019-09-18T03:43:55Z">
+        </test-method> <!-- trueLogin -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:automate.webautomate.testcase.LoginMKW@73f792cf]" name="afterClass" is-config="true" duration-ms="2306" started-at="2019-09-23T06:36:27Z" finished-at="2019-09-23T06:36:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- automate.webautomate.testcase.Login -->
+      </class> <!-- automate.webautomate.testcase.LoginMKW -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
